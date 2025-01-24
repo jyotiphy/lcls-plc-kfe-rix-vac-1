@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<TcPlcObject Version="1.1.0.1" ProductVersion="3.1.4022.18">
+<TcPlcObject Version="1.1.0.1" ProductVersion="3.1.4024.12">
   <GVL Name="GVL_KFE_RIX_VAC" Id="{d38b3a8d-c2e8-4a67-9aeb-873e21370c76}">
     <Declaration><![CDATA[VAR_GLOBAL
 
@@ -168,6 +168,14 @@ fb_SP1K2_PAX_VRM_3 : FB_VRC;
                                  .q_xOPN_DO	:= TIIB[Term 168 (EL2004)]^Channel 1^Output'}
 fb_SP1K2_PAX_VRC_4 : FB_VRC;
 
+{attribute 'pytmc' := ' pv: AT3K2:SOLID:VWC:VRC:01'}
+(* TODO: UPDATE LINKING AFTER SCANNING
+{attribute 'TcLinkTo' := 	'.i_xOpnLS		:=	TIIB[Term 169 (EL1004)]^Channel 1^Input;
+                             .i_xClsLS		:= TIIB[Term 169 (EL1004)]^Channel 2^Input ;
+                             .q_xOPN_DO	:= TIIB[Term 168 (EL2004)]^Channel 1^Output'}
+*)
+fb_AT3K2_SOLID_VWC_01 : FB_VRC;
+
 //{attribute 'pytmc' := ' pv: SP1K2:PAX:VRC:5 '}
 //{attribute 'TcLinkTo' := 	'.i_xOpnLS		:=	TIIB[Term 169 (EL1004)]^Channel 3^Input;
 //                                .i_xClsLS		:= TIIB[Term 169 (EL1004)]^Channel 4^Input ;
@@ -246,6 +254,27 @@ fb_SP1K2_PAX_PTM_01 : FB_PTM_Pfeiffer;
                                .q_PumpingStation  := TIIB[Term 165 (EL2004)]^Channel 3^Output'}
 fb_SP1K2_PAX_PTM_02 : FB_PTM_Pfeiffer;
 
+{attribute 'pytmc' := ' pv: LI3K2:K2B_OUT:PTM:01 '}
+{attribute 'TcLinkTo' := 	'.i_xAtSpd		      := TIIB[EL1004_05_03]^Channel 1^Input ;
+                               .i_xRemote 	      := TIIB[EL1004_05_03]^Channel 2^Input ;
+                               .i_xFaultNC		  := TIIB[EL1004_05_03]^Channel 3^Input;
+                               .q_RunDO           := TIIB[EL2004_05_04]^Channel 1^Output;
+                               .q_xRemote         := TIIB[EL2004_05_04]^Channel 2^Output ;
+                               .q_PumpingStation  := TIIB[EL2004_05_04]^Channel 3^Output'}
+fb_LI3K2_K2B_OUT_PTM_01 : FB_PTM_Pfeiffer;
+
+(* TODO: Change Linking When New Temrinals are Scanned
+{attribute 'pytmc' := ' pv: LI4K2:K2B_OUT:PTM:2 '}
+{attribute 'TcLinkTo' := 	'.i_xAtSpd		      := TIIB[Term 163 (EL1004)]^Channel 1^Input ;
+                               .i_xRemote 	      := TIIB[Term 163 (EL1004)]^Channel 2^Input ;
+                               .i_xFaultNC		  := TIIB[Term 163 (EL1004)]^Channel 3^Input;
+                               .q_RunDO           := TIIB[Term 165 (EL2004)]^Channel 1^Output;
+                               .q_xRemote         := TIIB[Term 165 (EL2004)]^Channel 2^Output ;
+                               .q_PumpingStation  := TIIB[Term 165 (EL2004)]^Channel 3^Output'}
+*)
+fb_LI4K2_K2B_OUT_PTM_01 : FB_PTM_Pfeiffer;
+
+
 //VFS
 
 {attribute 'pytmc' := '		pv: TV1K2:VFS:1	'}
@@ -283,6 +312,15 @@ fbPfeifferCom_SP1K2_PAX_PTM_01       : FB_PFEIFFER_COM;
 stPfeiffer_CTRL_SP1K2_PAX_PTM_02     : ARRAY[1..gcMaxPfeifferPumps] OF ST_PfeifferControl;
 stPfeiffer_RBK_SP1K2_PAX_PTM_02      : ARRAY[1..gcMaxPfeifferPumps] OF ST_PfeifferStatus;
 fbPfeifferCom_SP1K2_PAX_PTM_02       : FB_PFEIFFER_COM;
+
+stPfeiffer_CTRL_LI3K2_PAX_PTM_01    : ARRAY[1..gcMaxPfeifferPumps] OF ST_PfeifferControl;
+stPfeiffer_RBK_LI3K2_PAX_PTM_01      : ARRAY[1..gcMaxPfeifferPumps] OF ST_PfeifferStatus;
+fbPfeifferCom_LI3K2_PAX_PTM_01       : FB_PFEIFFER_COM;
+
+stPfeiffer_CTRL_LI4K2_PAX_PTM_01     : ARRAY[1..gcMaxPfeifferPumps] OF ST_PfeifferControl;
+stPfeiffer_RBK_LI4K2_PAX_PTM_01      : ARRAY[1..gcMaxPfeifferPumps] OF ST_PfeifferStatus;
+fbPfeifferCom_LI4K2_PAX_PTM_01       : FB_PFEIFFER_COM;
+
 
 //// Connected to B950-310-WALL-W-DRL-02 (Mechanical Room )
 {attribute 'pytmc' := ' pv: RIXS:PRO:01 '}
