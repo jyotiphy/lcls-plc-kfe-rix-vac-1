@@ -169,11 +169,10 @@ fb_SP1K2_PAX_VRM_3 : FB_VRC;
 fb_SP1K2_PAX_VRC_4 : FB_VRC;
 
 {attribute 'pytmc' := ' pv: AT3K2:SOLID:VWC:VRC:01'}
-(* TODO: UPDATE LINKING AFTER SCANNING
-{attribute 'TcLinkTo' := 	'.i_xOpnLS		:=	TIIB[Term 169 (EL1004)]^Channel 1^Input;
-                             .i_xClsLS		:= TIIB[Term 169 (EL1004)]^Channel 2^Input ;
-                             .q_xOPN_DO	:= TIIB[Term 168 (EL2004)]^Channel 1^Output'}
-*)
+
+{attribute 'TcLinkTo' := 	'.i_xOpnLS		:=	TIIB[K2S18_EL1004_E1]^Channel 1^Input;
+                             .i_xClsLS		:= TIIB[K2S18_EL1004_E1]^Channel 2^Input ;
+                             .q_xOPN_DO	:= TIIB[K2S18_EL2004_E2]^Channel 1^Output'}
 fb_AT3K2_SOLID_VWC_01 : FB_VRC;
 
 //{attribute 'pytmc' := ' pv: SP1K2:PAX:VRC:5 '}
@@ -263,15 +262,14 @@ fb_SP1K2_PAX_PTM_02 : FB_PTM_Pfeiffer;
                                .q_PumpingStation  := TIIB[EL2004_05_04]^Channel 3^Output'}
 fb_LI3K2_K2B_OUT_PTM_01 : FB_PTM_Pfeiffer;
 
-(* TODO: Change Linking When New Temrinals are Scanned
+
 {attribute 'pytmc' := ' pv: LI4K2:K2B_OUT:PTM:2 '}
-{attribute 'TcLinkTo' := 	'.i_xAtSpd		      := TIIB[Term 163 (EL1004)]^Channel 1^Input ;
-                               .i_xRemote 	      := TIIB[Term 163 (EL1004)]^Channel 2^Input ;
-                               .i_xFaultNC		  := TIIB[Term 163 (EL1004)]^Channel 3^Input;
-                               .q_RunDO           := TIIB[Term 165 (EL2004)]^Channel 1^Output;
-                               .q_xRemote         := TIIB[Term 165 (EL2004)]^Channel 2^Output ;
-                               .q_PumpingStation  := TIIB[Term 165 (EL2004)]^Channel 3^Output'}
-*)
+{attribute 'TcLinkTo' := 	'.i_xAtSpd		      := TIIB[K2S18 _EL1004_E4]^Channel 1^Input ;
+                               .i_xRemote 	      := TIIB[K2S18 _EL1004_E4]^Channel 2^Input ;
+                               .i_xFaultNC		  := TIIB[K2S18 _EL1004_E4]^Channel 3^Input;
+                               .q_RunDO           := TIIB[K2S18_EL2004_E5]^Channel 1^Output;
+                               .q_xRemote         := TIIB[K2S18_EL2004_E5]^Channel 2^Output ;
+                               .q_PumpingStation  := TIIB[K2S18_EL2004_E5]^Channel 3^Output'}
 fb_LI4K2_K2B_OUT_PTM_01 : FB_PTM_Pfeiffer;
 
 
