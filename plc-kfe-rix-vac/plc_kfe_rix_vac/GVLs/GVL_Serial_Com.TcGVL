@@ -8,18 +8,18 @@ VAR_GLOBAL
     SerialTXBuffer_SP1K2_PAX_PTM_01     : ComBuffer;
     SerialRXBuffer_SP1K2_PAX_PTM_02     : ComBuffer;
     SerialTXBuffer_SP1K2_PAX_PTM_02     : ComBuffer;
-	
-	SerialRXBuffer_LI3K2_K2B_OUT_PTM_01     : ComBuffer;
- 	SerialTXBuffer_LI3K2_K2B_OUT_PTM_01     : ComBuffer;
-	SerialRXBuffer_LI4K2_K2B_OUT_PTM_01     : ComBuffer;
- 	SerialTXBuffer_LI4K2_K2B_OUT_PTM_01     : ComBuffer;
+
+    SerialRXBuffer_LI3K2_K2B_OUT_PTM_01     : ComBuffer;
+     SerialTXBuffer_LI3K2_K2B_OUT_PTM_01     : ComBuffer;
+    SerialRXBuffer_LI4K2_K2B_OUT_PTM_01     : ComBuffer;
+     SerialTXBuffer_LI4K2_K2B_OUT_PTM_01     : ComBuffer;
 
     //Serial Terminal
     fbSerialLineControl_SP1K2_PAX_PTM_01     : SerialLineControl;
     fbSerialLineControl_SP1K2_PAX_PTM_02     : SerialLineControl;
-	
-	fbSerialLineControl_LI3K2_K2B_OUT_PTM_01     : SerialLineControl;
-	fbSerialLineControl_LI4K2_K2B_OUT_PTM_01     : SerialLineControl;
+
+    fbSerialLineControl_LI3K2_K2B_OUT_PTM_01     : SerialLineControl;
+    fbSerialLineControl_LI4K2_K2B_OUT_PTM_01     : SerialLineControl;
 
     //SERIAL IO
     {attribute	'TcLinkTo'	:=	'.Status:=TIIB[Term 162 (EL6021)]^COM TxPDO-Map Inputs^Status;
@@ -125,8 +125,8 @@ VAR_GLOBAL
                                  .D[21]:=TIIB[Term 166 (EL6021)]^COM RxPDO-Map Outputs^Data Out 21
     '}
     stComOut_SP1K2_PAX_PTM_02 AT %Q* : EL6outData22B;
-	
-	    {attribute	'TcLinkTo'	:=	'.Status:=TIIB[EL6021_05_12]^COM TxPDO-Map Inputs^Status;
+
+        {attribute	'TcLinkTo'	:=	'.Status:=TIIB[EL6021_05_12]^COM TxPDO-Map Inputs^Status;
                                  .D[0]:=TIIB[EL6021_05_12]^COM TxPDO-Map Inputs^Data In 0;
                                  .D[1]:=TIIB[EL6021_05_12]^COM TxPDO-Map Inputs^Data In 1;
                                  .D[2]:=TIIB[EL6021_05_12]^COM TxPDO-Map Inputs^Data In 2;
@@ -177,9 +177,9 @@ VAR_GLOBAL
                                  .D[21]:=TIIB[EL6021_05_12]^COM RxPDO-Map Outputs^Data Out 21
     '}
     stComOut_LI3K2_K2B_OUT_PTM_01 AT %Q* : EL6outData22B;
-	
-	
-	{attribute	'TcLinkTo'	:=	'.Status:=TIIB[K2S18_EL6021_E6]^COM TxPDO-Map Inputs^Status;
+
+
+    {attribute	'TcLinkTo'	:=	'.Status:=TIIB[K2S18_EL6021_E6]^COM TxPDO-Map Inputs^Status;
                                  .D[0]:=TIIB[K2S18_EL6021_E6]^COM TxPDO-Map Inputs^Data In 0;
                                  .D[1]:=TIIB[K2S18_EL6021_E6]^COM TxPDO-Map Inputs^Data In 1;
                                  .D[2]:=TIIB[K2S18_EL6021_E6]^COM TxPDO-Map Inputs^Data In 2;
@@ -230,7 +230,7 @@ VAR_GLOBAL
                                  .D[20]:=TIIB[K2S18_EL6021_E6]^COM RxPDO-Map Outputs^Data Out 20;
                                  .D[21]:=TIIB[K2S18_EL6021_E6]^COM RxPDO-Map Outputs^Data Out 21
     '}
-	
+
     stComOut_LI4K2_K2B_OUT_PTM_01 AT %Q* : EL6outData22B;
 
 

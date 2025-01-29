@@ -241,7 +241,7 @@ bSP1K2_PAX_VRC_2_ILK := F_TurboGateValve_Protection_ILK(i_Turbo:=fb_SP1K2_PAX_PT
 fb_SP1K2_PAX_VRC_2(i_xExtILK_OK:=bSP1K2_PAX_VRC_2_ILK,
             i_xOverrideMode:=xSystemOverrideMode1,
             iq_stValve =>);
-			
+
 fb_AT3K2_SOLID_VWC_01(i_xExtILK_OK:=TRUE, i_xOverrideMode:= xSystemOverrideMode1, iq_stValve=>);
 
 //Manual Valve, only readback
@@ -290,7 +290,7 @@ fbPfeifferCom_SP1K2_PAX_PTM_02(astPfeifferControl:= stPfeiffer_CTRL_SP1K2_PAX_PT
 (*Copy Status Pv's into the PTM structure*)
 fb_SP1K2_PAX_PTM_02.M_Serial_IO(st_Pfeiffer_RBK:= stPfeiffer_RBK_SP1K2_PAX_PTM_02[1],
                             st_Pfeiffer_CTRL:= stPfeiffer_CTRL_SP1K2_PAX_PTM_02[1]);
-							
+
 (*Assign adresses to the pfeiffer controllers connected to this serial terminal*)
 stPfeiffer_CTRL_LI3K2_PAX_PTM_01[1].iSerialAddress:= 1;
 stPfeiffer_CTRL_LI3K2_PAX_PTM_01[1].xEnableComm:= TRUE;
@@ -302,7 +302,7 @@ fbPfeifferCom_LI3K2_PAX_PTM_01(astPfeifferControl:= stPfeiffer_CTRL_LI3K2_PAX_PT
 (*Copy Status Pv's into the PTM structure*)
 fb_LI3K2_K2B_OUT_PTM_01.M_Serial_IO(st_Pfeiffer_RBK:= stPfeiffer_RBK_LI3K2_PAX_PTM_01[1],
                             st_Pfeiffer_CTRL:= stPfeiffer_CTRL_LI3K2_PAX_PTM_01[1]);
-							
+
 (*Assign adresses to the pfeiffer controllers connected to this serial terminal*)
 stPfeiffer_CTRL_LI4K2_PAX_PTM_01[1].iSerialAddress:= 1;
 stPfeiffer_CTRL_LI4K2_PAX_PTM_01[1].xEnableComm:= TRUE;

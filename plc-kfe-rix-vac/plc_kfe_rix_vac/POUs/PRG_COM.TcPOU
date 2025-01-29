@@ -27,7 +27,7 @@ fbSerialLineControl_SP1K2_PAX_PTM_02(
     RxBuffer:= SerialRXBuffer_SP1K2_PAX_PTM_02,
     Error=> ,
     ErrorID=> );
-	
+
 fbSerialLineControl_LI3K2_K2B_OUT_PTM_01(
     Mode:= SERIALLINEMODE_EL6_22B,
     pComIn:= ADR(stComIn_LI3K2_K2B_OUT_PTM_01),
@@ -37,7 +37,7 @@ fbSerialLineControl_LI3K2_K2B_OUT_PTM_01(
     RxBuffer:= SerialRXBuffer_LI3K2_K2B_OUT_PTM_01,
     Error=> ,
     ErrorID=> );
-	
+
 fbSerialLineControl_LI4K2_K2B_OUT_PTM_01(
     Mode:= SERIALLINEMODE_EL6_22B,
     pComIn:= ADR(stComIn_LI4K2_K2B_OUT_PTM_01),
