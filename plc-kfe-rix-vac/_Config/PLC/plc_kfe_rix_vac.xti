@@ -399,7 +399,7 @@
 		</DataType>
 	</DataTypes>
 	<Project GUID="{8CBBF67A-BFE9-4149-A495-ECE1092E8FE6}" Name="plc_kfe_rix_vac" PrjFilePath="..\..\plc_kfe_rix_vac\plc_kfe_rix_vac.plcproj" TmcFilePath="..\..\plc_kfe_rix_vac\plc_kfe_rix_vac.tmc" ReloadTmc="true" AmsPort="851" FileArchiveSettings="#x000e" SymbolicMapping="true">
-		<Instance Id="#x08502000" TcSmClass="TComPlcObjDef" KeepUnrestoredLinks="2" TmcPath="plc_kfe_rix_vac\plc_kfe_rix_vac.tmc" TmcHash="{B3CDDCD6-FA34-4CE7-0FC2-EB91C65472B4}">
+		<Instance Id="#x08502000" TcSmClass="TComPlcObjDef" KeepUnrestoredLinks="2" TmcPath="plc_kfe_rix_vac\plc_kfe_rix_vac.tmc" TmcHash="{4C7F75B4-6648-5A8A-11F4-8AD9A753DF97}">
 			<Name>plc_kfe_rix_vac Instance</Name>
 			<CLSID ClassFactory="TcPlc30">{08500001-0000-0000-F000-000000000064}</CLSID>
 			<Vars VarGrpType="1">
@@ -985,15 +985,6 @@
 					<Type>BOOL</Type>
 				</Var>
 				<Var>
-					<Name>GVL_KFE_RIX_VAC.fb_AT3K2_SOLID_VWC_01.i_xOpnLS</Name>
-					<Comment><![CDATA[IO]]></Comment>
-					<Type>BOOL</Type>
-				</Var>
-				<Var>
-					<Name>GVL_KFE_RIX_VAC.fb_AT3K2_SOLID_VWC_01.i_xClsLS</Name>
-					<Type>BOOL</Type>
-				</Var>
-				<Var>
 					<Name>GVL_KFE_RIX_VAC.fb_PC1K1_ZOS_PIP_1.i_iPRESS</Name>
 					<Type>INT</Type>
 				</Var>
@@ -1198,42 +1189,6 @@
 					<Type>BOOL</Type>
 				</Var>
 				<Var>
-					<Name>GVL_KFE_RIX_VAC.fb_LI3K2_K2B_OUT_PTM_01.i_xAtSpd</Name>
-					<Comment><![CDATA[ Normaml operation when true]]></Comment>
-					<Type>BOOL</Type>
-				</Var>
-				<Var>
-					<Name>GVL_KFE_RIX_VAC.fb_LI3K2_K2B_OUT_PTM_01.i_xFaultNC</Name>
-					<Comment><![CDATA[ Error]]></Comment>
-					<Type>BOOL</Type>
-				</Var>
-				<Var>
-					<Name>GVL_KFE_RIX_VAC.fb_LI3K2_K2B_OUT_PTM_01.i_xWarn</Name>
-					<Type>BOOL</Type>
-				</Var>
-				<Var>
-					<Name>GVL_KFE_RIX_VAC.fb_LI3K2_K2B_OUT_PTM_01.i_xRemote</Name>
-					<Type>BOOL</Type>
-				</Var>
-				<Var>
-					<Name>GVL_KFE_RIX_VAC.fb_LI4K2_K2B_OUT_PTM_01.i_xAtSpd</Name>
-					<Comment><![CDATA[ Normaml operation when true]]></Comment>
-					<Type>BOOL</Type>
-				</Var>
-				<Var>
-					<Name>GVL_KFE_RIX_VAC.fb_LI4K2_K2B_OUT_PTM_01.i_xFaultNC</Name>
-					<Comment><![CDATA[ Error]]></Comment>
-					<Type>BOOL</Type>
-				</Var>
-				<Var>
-					<Name>GVL_KFE_RIX_VAC.fb_LI4K2_K2B_OUT_PTM_01.i_xWarn</Name>
-					<Type>BOOL</Type>
-				</Var>
-				<Var>
-					<Name>GVL_KFE_RIX_VAC.fb_LI4K2_K2B_OUT_PTM_01.i_xRemote</Name>
-					<Type>BOOL</Type>
-				</Var>
-				<Var>
 					<Name>GVL_KFE_RIX_VAC.fb_TV1K2_VFS_Interface.i_xVAC_FAULT_OK</Name>
 					<Comment><![CDATA[Valve Vacuum OK, is set to False when there is Vacuum Fault]]></Comment>
 					<Type>BOOL</Type>
@@ -1290,6 +1245,51 @@
 					<Name>GVL_KFE_RIX_VAC.RIXS_ROUGH_GPI_01.i_iPRESS_R</Name>
 					<Comment><![CDATA[ input Pressure // Link to analog Input]]></Comment>
 					<Type>INT</Type>
+				</Var>
+				<Var>
+					<Name>GVL_KFE_RIX_VAC.fb_AT3K2_SOLID_VWC_01.i_xOpnLS</Name>
+					<Comment><![CDATA[IO]]></Comment>
+					<Type>BOOL</Type>
+				</Var>
+				<Var>
+					<Name>GVL_KFE_RIX_VAC.fb_AT3K2_SOLID_VWC_01.i_xClsLS</Name>
+					<Type>BOOL</Type>
+				</Var>
+				<Var>
+					<Name>GVL_KFE_RIX_VAC.fb_LI3K2_K2B_OUT_PTM_01.i_xAtSpd</Name>
+					<Comment><![CDATA[ Normaml operation when true]]></Comment>
+					<Type>BOOL</Type>
+				</Var>
+				<Var>
+					<Name>GVL_KFE_RIX_VAC.fb_LI3K2_K2B_OUT_PTM_01.i_xFaultNC</Name>
+					<Comment><![CDATA[ Error]]></Comment>
+					<Type>BOOL</Type>
+				</Var>
+				<Var>
+					<Name>GVL_KFE_RIX_VAC.fb_LI3K2_K2B_OUT_PTM_01.i_xWarn</Name>
+					<Type>BOOL</Type>
+				</Var>
+				<Var>
+					<Name>GVL_KFE_RIX_VAC.fb_LI3K2_K2B_OUT_PTM_01.i_xRemote</Name>
+					<Type>BOOL</Type>
+				</Var>
+				<Var>
+					<Name>GVL_KFE_RIX_VAC.fb_LI4K2_K2B_OUT_PTM_01.i_xAtSpd</Name>
+					<Comment><![CDATA[ Normaml operation when true]]></Comment>
+					<Type>BOOL</Type>
+				</Var>
+				<Var>
+					<Name>GVL_KFE_RIX_VAC.fb_LI4K2_K2B_OUT_PTM_01.i_xFaultNC</Name>
+					<Comment><![CDATA[ Error]]></Comment>
+					<Type>BOOL</Type>
+				</Var>
+				<Var>
+					<Name>GVL_KFE_RIX_VAC.fb_LI4K2_K2B_OUT_PTM_01.i_xWarn</Name>
+					<Type>BOOL</Type>
+				</Var>
+				<Var>
+					<Name>GVL_KFE_RIX_VAC.fb_LI4K2_K2B_OUT_PTM_01.i_xRemote</Name>
+					<Type>BOOL</Type>
 				</Var>
 			</Vars>
 			<Vars VarGrpType="2" ContextId="1" AreaNo="17">
@@ -1466,10 +1466,6 @@
 					<Type>BOOL</Type>
 				</Var>
 				<Var>
-					<Name>GVL_KFE_RIX_VAC.fb_AT3K2_SOLID_VWC_01.q_xOPN_DO</Name>
-					<Type>BOOL</Type>
-				</Var>
-				<Var>
 					<Name>GVL_KFE_RIX_VAC.fb_PC1K1_ZOS_PIP_1.q_xHVEna_DO</Name>
 					<Comment><![CDATA[ Enable High Voltage when TRUE]]></Comment>
 					<Type>BOOL</Type>
@@ -1591,42 +1587,6 @@
 					<Type>BOOL</Type>
 				</Var>
 				<Var>
-					<Name>GVL_KFE_RIX_VAC.fb_LI3K2_K2B_OUT_PTM_01.q_RunDO</Name>
-					<Comment><![CDATA[ Start/Stop for TC110 link this output to the Pumping station bit]]></Comment>
-					<Type>BOOL</Type>
-				</Var>
-				<Var>
-					<Name>GVL_KFE_RIX_VAC.fb_LI3K2_K2B_OUT_PTM_01.q_PumpingStation</Name>
-					<Comment><![CDATA[ Start/Stop interlock]]></Comment>
-					<Type>BOOL</Type>
-				</Var>
-				<Var>
-					<Name>GVL_KFE_RIX_VAC.fb_LI3K2_K2B_OUT_PTM_01.q_xRemote</Name>
-					<Type>BOOL</Type>
-				</Var>
-				<Var>
-					<Name>GVL_KFE_RIX_VAC.fb_LI3K2_K2B_OUT_PTM_01.q_xReset</Name>
-					<Type>BOOL</Type>
-				</Var>
-				<Var>
-					<Name>GVL_KFE_RIX_VAC.fb_LI4K2_K2B_OUT_PTM_01.q_RunDO</Name>
-					<Comment><![CDATA[ Start/Stop for TC110 link this output to the Pumping station bit]]></Comment>
-					<Type>BOOL</Type>
-				</Var>
-				<Var>
-					<Name>GVL_KFE_RIX_VAC.fb_LI4K2_K2B_OUT_PTM_01.q_PumpingStation</Name>
-					<Comment><![CDATA[ Start/Stop interlock]]></Comment>
-					<Type>BOOL</Type>
-				</Var>
-				<Var>
-					<Name>GVL_KFE_RIX_VAC.fb_LI4K2_K2B_OUT_PTM_01.q_xRemote</Name>
-					<Type>BOOL</Type>
-				</Var>
-				<Var>
-					<Name>GVL_KFE_RIX_VAC.fb_LI4K2_K2B_OUT_PTM_01.q_xReset</Name>
-					<Type>BOOL</Type>
-				</Var>
-				<Var>
 					<Name>GVL_KFE_RIX_VAC.fb_TV1K2_VFS_Interface.iq_stValve.xCLS_SW</Name>
 					<Comment><![CDATA[external open signal e.g epics]]></Comment>
 					<Type>BOOL</Type>
@@ -1690,6 +1650,46 @@
 				</Var>
 				<Var>
 					<Name>GVL_Variables.g_FastFaultOutput1.q_xFastFaultOut</Name>
+					<Type>BOOL</Type>
+				</Var>
+				<Var>
+					<Name>GVL_KFE_RIX_VAC.fb_AT3K2_SOLID_VWC_01.q_xOPN_DO</Name>
+					<Type>BOOL</Type>
+				</Var>
+				<Var>
+					<Name>GVL_KFE_RIX_VAC.fb_LI3K2_K2B_OUT_PTM_01.q_RunDO</Name>
+					<Comment><![CDATA[ Start/Stop for TC110 link this output to the Pumping station bit]]></Comment>
+					<Type>BOOL</Type>
+				</Var>
+				<Var>
+					<Name>GVL_KFE_RIX_VAC.fb_LI3K2_K2B_OUT_PTM_01.q_PumpingStation</Name>
+					<Comment><![CDATA[ Start/Stop interlock]]></Comment>
+					<Type>BOOL</Type>
+				</Var>
+				<Var>
+					<Name>GVL_KFE_RIX_VAC.fb_LI3K2_K2B_OUT_PTM_01.q_xRemote</Name>
+					<Type>BOOL</Type>
+				</Var>
+				<Var>
+					<Name>GVL_KFE_RIX_VAC.fb_LI3K2_K2B_OUT_PTM_01.q_xReset</Name>
+					<Type>BOOL</Type>
+				</Var>
+				<Var>
+					<Name>GVL_KFE_RIX_VAC.fb_LI4K2_K2B_OUT_PTM_01.q_RunDO</Name>
+					<Comment><![CDATA[ Start/Stop for TC110 link this output to the Pumping station bit]]></Comment>
+					<Type>BOOL</Type>
+				</Var>
+				<Var>
+					<Name>GVL_KFE_RIX_VAC.fb_LI4K2_K2B_OUT_PTM_01.q_PumpingStation</Name>
+					<Comment><![CDATA[ Start/Stop interlock]]></Comment>
+					<Type>BOOL</Type>
+				</Var>
+				<Var>
+					<Name>GVL_KFE_RIX_VAC.fb_LI4K2_K2B_OUT_PTM_01.q_xRemote</Name>
+					<Type>BOOL</Type>
+				</Var>
+				<Var>
+					<Name>GVL_KFE_RIX_VAC.fb_LI4K2_K2B_OUT_PTM_01.q_xReset</Name>
 					<Type>BOOL</Type>
 				</Var>
 			</Vars>

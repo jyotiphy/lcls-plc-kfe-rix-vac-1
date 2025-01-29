@@ -263,7 +263,7 @@ fb_SP1K2_PAX_PTM_02 : FB_PTM_Pfeiffer;
 fb_LI3K2_K2B_OUT_PTM_01 : FB_PTM_Pfeiffer;
 
 
-{attribute 'pytmc' := ' pv: LI4K2:K2B_OUT:PTM:2 '}
+{attribute 'pytmc' := ' pv: LI4K2:K2B_OUT:PTM:01 '}
 {attribute 'TcLinkTo' := 	'.i_xAtSpd		      := TIIB[K2S18 _EL1004_E4]^Channel 1^Input ;
                                .i_xRemote 	      := TIIB[K2S18 _EL1004_E4]^Channel 2^Input ;
                                .i_xFaultNC		  := TIIB[K2S18 _EL1004_E4]^Channel 3^Input;
