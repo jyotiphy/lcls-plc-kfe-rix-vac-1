@@ -26,7 +26,7 @@ fb_SP1K2_PAX_GPI_1 : FB_MKS275;
 {attribute 'TcLinkTo' := 	'.i_iPRESS_R	:= TIIB[Term 170 (EL3174-0002)]^AI Standard Channel 3^Value'}
 {attribute 'pytmc' := ' pv: SP1K2:PAX:GPI:2 '}
 fb_SP1K2_PAX_GPI_2 : FB_MKS275;
-{attribute 'TcLinkTo' := 	'.i_iPRESS_R	:= TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 45 (EK1521-0010)^Term 47 (EK1501-0010)^Term 62 (EK1122)^EK1100_05_00^EL3174_05_11^AI Standard Channel 1^Value'}
+{attribute 'TcLinkTo' := 	'.i_iPRESS_R	:= TIIB[EL3174_05_11]^AI Standard Channel 1^Value'}
 {attribute 'pytmc' := ' pv: IM5K2:PPM:GPI:1 '}
 fb_IM5K2_PPM_GPI_1 : FB_MKS275;
 
@@ -35,6 +35,7 @@ fb_IM5K2_PPM_GPI_1 : FB_MKS275;
 {attribute 'pytmc' := ' pv: TM2K2:ATM:GPI:1 '}
 fb_TM2K2_ATM_GPI_1 : FB_MKS275;
 
+{attribute 'TcLinkTo' := 	'.i_iPRESS_R	:= TIIB[Box 256 (EP3174-0002)]^AI Standard Channel 3^Value'}
 {attribute 'pytmc' := ' pv: LI4K2:K2A:GPI:1 '}
 fb_LI4K2_K2A_GPI_1 : FB_MKS275;
 
@@ -92,6 +93,9 @@ fb_SP1K2_PAX_GCC_2 : FB_MX7M;
                              .q_xHV_DIS		:= 	TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 45 (EK1521-0010)^Term 47 (EK1501-0010)^Term 62 (EK1122)^K2S2-DRL-01 (EP2624-0002)^Channel 1^Output	'}
 {attribute 'pytmc' := ' pv: ST1K2:PPS:GCC:1 '}
 fb_ST1K2_PPS_GCC_1 : FB_MKS500;
+
+{attribute 'TcLinkTo' := 	'.i_iPRESS_R	:=	TIIB[Box 256 (EP3174-0002)]^AI Standard Channel 2^Value;
+                             .q_xHV_DIS		:= 	TIIB[Box 257 (EP2624-0002)]^Channel 1^Output'}
 {attribute 'pytmc' := ' pv: IM6K2:PPM:GCC:1 '}
 fb_IM6K2_PPM_GCC_1 : FB_MKS500;
 

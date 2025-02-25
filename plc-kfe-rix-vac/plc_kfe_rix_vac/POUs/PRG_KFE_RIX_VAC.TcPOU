@@ -194,8 +194,8 @@ fb_MR4K2_KBV_VGC_2(
                          io_fbFFHWO := g_FastFaultOutput2, fbArbiter := fbArbiter2);
 
 fb_LI3K2_K2B_VWC_1(
-                         i_stUSG := fb_TM2K2_K2B_GCC_1.IG,
-                         i_stDSG := fb_TM2K2_K2B_GCC_1.IG,
+                         i_stUSG := bm_dummy_gauge,
+                         i_stDSG := bm_dummy_gauge,
                          i_xDis_DPIlk := FALSE,
                          i_xIsAperture := TRUE,
                          i_xEPS_OK := TRUE,
