@@ -6,6 +6,8 @@ VAR
 vfs_dummy_gauge : ST_VG;
 bm_dummy_gauge : ST_VG;
 
+st_LI3K2_dummy_gauge : ST_VG;
+
 iWatchdog: UDINT;
 qRIXS_ROUGH_GPI_02:FB_TGPI_ADS;
 qRIXS_PRO_01:FB_PRO_ADS;
@@ -19,8 +21,7 @@ bSP1K2_PAX_VRC_5_ILK : BOOL := FALSE;
 END_VAR
 ]]></Declaration>
     <Implementation>
-      <ST><![CDATA[
-// MKS275 Gauges
+      <ST><![CDATA[// MKS275 Gauges
 
 fb_PC1K1_ZOS_GPI_1(PG=>);
 fb_PC1K1_ZOS_GPI_1.M_SetBits(30518);
@@ -193,9 +194,14 @@ fb_MR4K2_KBV_VGC_2(
                          i_xOverrideMode := xSystemOverrideMode2,
                          io_fbFFHWO := g_FastFaultOutput2, fbArbiter := fbArbiter2);
 
+st_LI3K2_dummy_gauge.xPRESS_OK := TRUE;
+st_LI3K2_dummy_gauge.xAT_VAC := TRUE;
+st_LI3K2_dummy_gauge.eState := ValidLo;
+st_LI3K2_dummy_gauge.rPRESS := 1e-8;
+
 fb_LI3K2_K2B_VWC_1(
-                         i_stUSG := bm_dummy_gauge,
-                         i_stDSG := bm_dummy_gauge,
+                         i_stUSG := st_LI3K2_dummy_gauge,
+                         i_stDSG := st_LI3K2_dummy_gauge,
                          i_xDis_DPIlk := FALSE,
                          i_xIsAperture := TRUE,
                          i_xEPS_OK := TRUE,

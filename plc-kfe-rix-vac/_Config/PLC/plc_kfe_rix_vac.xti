@@ -399,7 +399,7 @@
 		</DataType>
 	</DataTypes>
 	<Project GUID="{8CBBF67A-BFE9-4149-A495-ECE1092E8FE6}" Name="plc_kfe_rix_vac" PrjFilePath="..\..\plc_kfe_rix_vac\plc_kfe_rix_vac.plcproj" TmcFilePath="..\..\plc_kfe_rix_vac\plc_kfe_rix_vac.tmc" ReloadTmc="true" AmsPort="851" FileArchiveSettings="#x000e" SymbolicMapping="true">
-		<Instance Id="#x08502000" TcSmClass="TComPlcObjDef" KeepUnrestoredLinks="2" TmcPath="plc_kfe_rix_vac\plc_kfe_rix_vac.tmc" TmcHash="{45ED4CBA-0A59-EBFD-990B-415DE47A391D}">
+		<Instance Id="#x08502000" TcSmClass="TComPlcObjDef" KeepUnrestoredLinks="2" TmcPath="plc_kfe_rix_vac\plc_kfe_rix_vac.tmc" TmcHash="{9AD15239-B680-9B19-9014-14FEA8C86997}">
 			<Name>plc_kfe_rix_vac Instance</Name>
 			<CLSID ClassFactory="TcPlc30">{08500001-0000-0000-F000-000000000064}</CLSID>
 			<Vars VarGrpType="1">
