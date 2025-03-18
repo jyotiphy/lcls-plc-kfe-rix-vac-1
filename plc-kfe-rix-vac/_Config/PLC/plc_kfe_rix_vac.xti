@@ -399,7 +399,7 @@
 		</DataType>
 	</DataTypes>
 	<Project GUID="{8CBBF67A-BFE9-4149-A495-ECE1092E8FE6}" Name="plc_kfe_rix_vac" PrjFilePath="..\..\plc_kfe_rix_vac\plc_kfe_rix_vac.plcproj" TmcFilePath="..\..\plc_kfe_rix_vac\plc_kfe_rix_vac.tmc" ReloadTmc="true" AmsPort="851" FileArchiveSettings="#x000e" SymbolicMapping="true">
-		<Instance Id="#x08502000" TcSmClass="TComPlcObjDef" KeepUnrestoredLinks="2" TmcPath="plc_kfe_rix_vac\plc_kfe_rix_vac.tmc" TmcHash="{5D3EC310-C362-4192-E2A3-408DB7C323B0}">
+		<Instance Id="#x08502000" TcSmClass="TComPlcObjDef" KeepUnrestoredLinks="2" TmcPath="plc_kfe_rix_vac\plc_kfe_rix_vac.tmc" TmcHash="{6A97258A-E03B-1480-E224-2A9958C81E7D}">
 			<Name>plc_kfe_rix_vac Instance</Name>
 			<CLSID ClassFactory="TcPlc30">{08500001-0000-0000-F000-000000000064}</CLSID>
 			<Vars VarGrpType="1">
@@ -1318,10 +1318,6 @@
 					<Type>BOOL</Type>
 				</Var>
 				<Var>
-					<Name>GVL_Variables.g_FastFaultOutput1.q_xFastFaultOut</Name>
-					<Type>BOOL</Type>
-				</Var>
-				<Var>
 					<Name>GVL_KFE_RIX_VAC.fb_PC1K1_ZOS_GCC_1.q_xHV_DIS</Name>
 					<Comment><![CDATA[ Enable High Voltage when True // 'TcLinkTo' (EP2624) ^Output]]></Comment>
 					<Type>BOOL</Type>
@@ -1697,6 +1693,10 @@
 					<Comment><![CDATA[IO]]></Comment>
 					<Type>BOOL</Type>
 				</Var>
+				<Var>
+					<Name>GVL_Variables.g_FastFaultOutput1.q_xFastFaultOut</Name>
+					<Type>BOOL</Type>
+				</Var>
 			</Vars>
 			<Vars VarGrpType="1" ContextId="2" AreaNo="32">
 				<Name>Serial_COM Inputs</Name>
@@ -2035,7 +2035,7 @@
 			<OwnerB Name="TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 45 (EK1521-0010)^Term 47 (EK1501-0010)^Term 62 (EK1122)^Box 256 (EP3174-0002)">
 				<Link VarA="PlcTask Inputs^GVL_KFE_RIX_VAC.fb_AT3K2_SOLID_GCC_1.i_iPRESS_R" VarB="AI Standard Channel 2^Value" AutoLink="true"/>
 				<Link VarA="PlcTask Inputs^GVL_KFE_RIX_VAC.fb_AT3K2_SOLID_GPI_1.i_iPRESS_R" VarB="AI Standard Channel 3^Value" AutoLink="true"/>
-				<Link VarA="PlcTask Inputs^GVL_KFE_RIX_VAC.fb_SP2K2_TXAS_GCP_1.i_iPRESS_R" VarB="AI Standard Channel 1^Value" AutoLink="true"/>
+				<Link VarA="PlcTask Inputs^GVL_KFE_RIX_VAC.fb_SP2K2_TXAS_GCP_1.i_iPRESS_R" VarB="AI Standard Channel 4^Value" AutoLink="true"/>
 			</OwnerB>
 			<OwnerB Name="TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 45 (EK1521-0010)^Term 47 (EK1501-0010)^Term 62 (EK1122)^Box 257 (EP2624-0002)">
 				<Link VarA="PlcTask Outputs^GVL_KFE_RIX_VAC.fb_AT3K2_SOLID_GCC_1.q_xHV_DIS" VarB="Channel 1^Output" AutoLink="true" Size="1"/>

@@ -90,6 +90,7 @@ fb_SP1K2_PAX_GCC_2(PG := fb_SP1K2_PAX_GPI_2.PG);
 fb_SP1K2_PAX_GCC_2.M_SetBits(30518);
 
 fb_SP2K2_TXAS_GCP_1(PG=>);
+
 //MKS422
 fb_TV4K2_GFS_1(PG := bm_dummy_gauge);
 

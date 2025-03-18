@@ -102,7 +102,7 @@ fb_AT3K2_SOLID_GCC_1 : FB_MKS500; //Check linking on device
 
 //MKS972B Combo Gauges
 
-{attribute 'TcLinkTo' := 	'.i_iPRESS_R	:=	TIIB[Box 256 (EP3174-0002)]^AI Standard Channel 1^Value'}
+{attribute 'TcLinkTo' := 	'.i_iPRESS_R	:=	TIIB[Box 256 (EP3174-0002)]^AI Standard Channel 4^Value'}
 {attribute 'pytmc' :=' pv: SP2K2:TXAS:GCP:1 '}
 fb_SP2K2_TXAS_GCP_1 : FB_972; //The EPLAN says something different from TcLinkTo copied from chemRIXs
 
@@ -241,7 +241,7 @@ fb_IM3K2_PPM_PIP_1 : FB_PIP_SIP;
 fb_IM4K2_PPM_PIP_1 : FB_PIP_SIP;
 {attribute 'pytmc' := ' pv: LI2K2:K2A:PIP:1 '}
 fb_LI2K2_K2A_PIP_1 : FB_PIP_SIP;
-{attribute 'pytmc' := ' pv: ST3K2:TERM:PIP:1 '}
+{attribute 'pytmc' := ' pv: SP2K2:TXAS:PIP:1 '}
 fb_SP2K2_TXAS_PIP_1 : FB_PIP_SIP;
 
 
