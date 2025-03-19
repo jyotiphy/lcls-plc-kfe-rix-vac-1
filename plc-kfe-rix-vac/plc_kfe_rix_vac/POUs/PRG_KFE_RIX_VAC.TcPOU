@@ -343,7 +343,7 @@ fb_IM2K2_PPM_PIP_1(i_stGauge := bm_dummy_gauge, i_xOverrideMode := xSystemOverri
 fb_IM3K2_PPM_PIP_1(i_stGauge := bm_dummy_gauge, i_xOverrideMode := xSystemOverrideMode2);
 fb_IM4K2_PPM_PIP_1(i_stGauge := bm_dummy_gauge, i_xOverrideMode := xSystemOverrideMode2);
 fb_LI2K2_K2A_PIP_1(i_stGauge := bm_dummy_gauge, i_xOverrideMode := xSystemOverrideMode2);
-fb_SP2K2_TXAS_PIP_1(i_stGauge := fb_SP2K2_TXAS_GCP_1.PG, i_xOverrideMode := xSystemOverrideMode2);
+fb_SP2K2_TXAS_PIP_1(i_stGauge := bm_dummy_gauge, i_xOverrideMode := xSystemOverrideMode2);
 
 //Fast shutter Valve Interface
 vfs_dummy_gauge.xPRESS_OK := TRUE;
