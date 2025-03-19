@@ -37,7 +37,7 @@ fb_TM2K2_ATM_GPI_1 : FB_MKS275;
 
 {attribute 'TcLinkTo' := 	'.i_iPRESS_R	:= TIIB[Box 256 (EP3174-0002)]^AI Standard Channel 3^Value'}
 {attribute 'pytmc' := ' pv: AT3K2:SOLID:GPI:1 '}
-fb_AT3K2_SOLID_GPI_1 : FB_MKS275;   //Check linking on device; CVM201 naming?
+fb_AT3K2_SOLID_GPI_1 : FB_MKS275;
 
 
 //MKS275 EP Gauges
@@ -98,13 +98,13 @@ fb_ST1K2_PPS_GCC_1 : FB_MKS500;
 {attribute 'TcLinkTo' := 	'.i_iPRESS_R	:=	TIIB[Box 256 (EP3174-0002)]^AI Standard Channel 2^Value;
                              .q_xHV_DIS		:= 	TIIB[Box 257 (EP2624-0002)]^Channel 1^Output'}
 {attribute 'pytmc' := ' pv: AT3K2:SOLID:GCC:1 '}
-fb_AT3K2_SOLID_GCC_1 : FB_MKS500; //Check linking on device
+fb_AT3K2_SOLID_GCC_1 : FB_MKS500;
 
 //MKS972B Combo Gauges
 
 {attribute 'TcLinkTo' := 	'.i_iPRESS_R	:=	TIIB[Box 256 (EP3174-0002)]^AI Standard Channel 4^Value'}
 {attribute 'pytmc' :=' pv: SP2K2:TXAS:GCP:1 '}
-fb_SP2K2_TXAS_GCP_1 : FB_972; //The EPLAN says something different from TcLinkTo copied from chemRIXs
+fb_SP2K2_TXAS_GCP_1 : FB_972;
 
 
 // MKS422

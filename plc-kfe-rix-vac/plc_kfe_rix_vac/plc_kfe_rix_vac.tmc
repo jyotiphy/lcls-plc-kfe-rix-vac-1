@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='utf-8'?>
-<TcModuleClass xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.beckhoff.com/schemas/2009/05/TcModuleClass" Hash="{6A97258A-E03B-1480-E224-2A9958C81E7D}" GeneratedBy="TwinCAT XAE Plc">
+<TcModuleClass xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.beckhoff.com/schemas/2009/05/TcModuleClass" Hash="{B49B845F-2772-ABB7-7894-10E7C3052427}" GeneratedBy="TwinCAT XAE Plc">
   <DataTypes>
     <DataType>
       <Name Namespace="Tc2_Utilities">E_HashPrefixTypes</Name>
@@ -60551,7 +60551,6 @@ in the event of errors/ warnings. Provides interlocking interface.</Comment>
           </Symbol>
           <Symbol>
             <Name>GVL_KFE_RIX_VAC.fb_AT3K2_SOLID_GPI_1</Name>
-            <Comment>Check linking on device; CVM201 naming?</Comment>
             <BitSize>91136</BitSize>
             <BaseType Namespace="LCLS_Vacuum">FB_MKS275</BaseType>
             <Properties>
@@ -60843,7 +60842,6 @@ in the event of errors/ warnings. Provides interlocking interface.</Comment>
           </Symbol>
           <Symbol>
             <Name>GVL_KFE_RIX_VAC.fb_AT3K2_SOLID_GCC_1</Name>
-            <Comment>Check linking on device</Comment>
             <BitSize>92864</BitSize>
             <BaseType Namespace="LCLS_Vacuum">FB_MKS500</BaseType>
             <Properties>
@@ -60864,7 +60862,7 @@ in the event of errors/ warnings. Provides interlocking interface.</Comment>
           </Symbol>
           <Symbol>
             <Name>GVL_KFE_RIX_VAC.fb_SP2K2_TXAS_GCP_1</Name>
-            <Comment>The EPLAN says something different from TcLinkTo copied from chemRIXs</Comment>
+            <Comment>MKS972B Combo Gauges</Comment>
             <BitSize>90880</BitSize>
             <BaseType Namespace="LCLS_Vacuum">FB_972</BaseType>
             <Properties>
@@ -70637,7 +70635,7 @@ fb_PC1K1_ZOS_PIP_2 : FB_PIP_GAMMA;</Comment>
         </Property>
         <Property>
           <Name>ChangeDate</Name>
-          <Value>2025-03-19T14:17:56</Value>
+          <Value>2025-03-19T15:48:40</Value>
         </Property>
         <Property>
           <Name>GeneratedCodeSize</Name>

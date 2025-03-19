@@ -399,7 +399,7 @@
 		</DataType>
 	</DataTypes>
 	<Project GUID="{8CBBF67A-BFE9-4149-A495-ECE1092E8FE6}" Name="plc_kfe_rix_vac" PrjFilePath="..\..\plc_kfe_rix_vac\plc_kfe_rix_vac.plcproj" TmcFilePath="..\..\plc_kfe_rix_vac\plc_kfe_rix_vac.tmc" ReloadTmc="true" AmsPort="851" FileArchiveSettings="#x000e" SymbolicMapping="true">
-		<Instance Id="#x08502000" TcSmClass="TComPlcObjDef" KeepUnrestoredLinks="2" TmcPath="plc_kfe_rix_vac\plc_kfe_rix_vac.tmc" TmcHash="{6A97258A-E03B-1480-E224-2A9958C81E7D}">
+		<Instance Id="#x08502000" TcSmClass="TComPlcObjDef" KeepUnrestoredLinks="2" TmcPath="plc_kfe_rix_vac\plc_kfe_rix_vac.tmc" TmcHash="{B49B845F-2772-ABB7-7894-10E7C3052427}">
 			<Name>plc_kfe_rix_vac Instance</Name>
 			<CLSID ClassFactory="TcPlc30">{08500001-0000-0000-F000-000000000064}</CLSID>
 			<Vars VarGrpType="1">
@@ -2270,14 +2270,19 @@
 			<OwnerB Name="TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 45 (EK1521-0010)^Term 47 (EK1501-0010)^Term 62 (EK1122)^Term 63 (EK1100) B950-233-100H1-R02-DRL-02^Term 104 (EL2008)">
 				<Link VarA="PlcTask Outputs^PRG_RIX_INTF.FB_FIM_ILK" VarB="Channel 1^PRG_RIX_INTF.FB_FIM_ILK" Size="1"/>
 			</OwnerB>
+			<OwnerB Name="TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 45 (EK1521-0010)^Term 47 (EK1501-0010)^Term 62 (EK1122)^Term 63 (EK1100) B950-233-100H1-R02-DRL-02^Term 164 (EL3174-0002)">
+				<Link VarA="PlcTask Inputs^GVL_KFE_RIX_VAC.fb_SP2K2_TXAS_PIP_1.i_iPRESS" VarB="AI Standard Channel 4^GVL_KFE_RIX_VAC.fb_SP2K2_TXAS_PIP_1.i_iPRESS"/>
+			</OwnerB>
 			<OwnerB Name="TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 45 (EK1521-0010)^Term 47 (EK1501-0010)^Term 62 (EK1122)^Term 63 (EK1100) B950-233-100H1-R02-DRL-02^Term 68 (EL3064)">
 				<Link VarA="PlcTask Inputs^GVL_KFE_RIX_VAC.fb_TV4K2_GFS_1.i_iPRESS_R" VarB="AI Standard Channel 1^Value"/>
 			</OwnerB>
 			<OwnerB Name="TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 45 (EK1521-0010)^Term 47 (EK1501-0010)^Term 62 (EK1122)^Term 63 (EK1100) B950-233-100H1-R02-DRL-02^Term 70 (EL2794)">
+				<Link VarA="PlcTask Outputs^GVL_KFE_RIX_VAC.fb_SP2K2_TXAS_PIP_1.q_xHVEna_DO" VarB="Channel 4^GVL_KFE_RIX_VAC.fb_SP2K2_TXAS_PIP_1.q_xHVEna_DO" Size="1"/>
 				<Link VarA="PlcTask Outputs^GVL_KFE_RIX_VAC.fb_TV4K2_GFS_1.q_xHV_DIS" VarB="Channel 1^Output" Size="1"/>
 			</OwnerB>
 			<OwnerB Name="TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 45 (EK1521-0010)^Term 47 (EK1501-0010)^Term 62 (EK1122)^Term 63 (EK1100) B950-233-100H1-R02-DRL-02^Term 72 (EL1124)">
 				<Link VarA="FSTask Inputs^GVL_RIX_VAC_FS_DEVICES.fb_TV1K2_VFS_1.i_xTrigger" VarB="Channel 1^GVL_RIX_VAC_FS_DEVICES.fb_TV1K2_VFS_1.i_xTrigger" Size="1"/>
+				<Link VarA="PlcTask Inputs^GVL_KFE_RIX_VAC.fb_SP2K2_TXAS_PIP_1.i_xIP_ON" VarB="Channel 3^GVL_KFE_RIX_VAC.fb_SP2K2_TXAS_PIP_1.i_xIP_ON" Size="1"/>
 			</OwnerB>
 			<OwnerB Name="TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 45 (EK1521-0010)^Term 47 (EK1501-0010)^Term 62 (EK1122)^Term 63 (EK1100) B950-233-100H1-R02-DRL-02^Term 77 (EK1122)^Term 201 (EK1100)^EL1088_03_01">
 				<Link VarA="PlcTask Inputs^GVL_KFE_RIX_VAC.RIXS_PRO_01.i_xAlarmOK" VarB="Channel 4^Input" AutoLink="true" Size="1"/>
