@@ -1,11 +1,11 @@
-#!/reg/g/pcds/epics/ioc/common/ads-ioc/R0.6.2/bin/rhel7-x86_64/adsIoc
+#!/reg/g/pcds/epics/ioc/common/ads-ioc/R0.8.0/bin/rhel7-x86_64/adsIoc
 ################### AUTO-GENERATED DO NOT EDIT ###################
 #
 #         Project: plc-kfe-rix-vac.tsproj
 #        PLC name: plc_kfe_rix_vac (plc_kfe_rix_vac Instance)
 # Generated using: pytmc 2.17.0
-# Project version: d02fec2
-#    Project hash: d02fec2ef1e93c025881f6ecdecb300d66fcbcae
+# Project version: 59d68ef
+#    Project hash: 59d68ef02f01b522e8f40b5fdd772f0264974258
 #     PLC IP/host: 172.21.140.69
 #      PLC Net ID: 172.21.140.69.1.1
 #  ** Production mode IOC **
@@ -30,7 +30,7 @@
 
 epicsEnvSet("ADS_IOC_TOP", "$(TOP)" )
 
-epicsEnvSet("ENGINEER", "jozamudi" )
+epicsEnvSet("ENGINEER", "jjoshi" )
 epicsEnvSet("LOCATION", "PLC:KFE:RIX:VAC:K2" )
 epicsEnvSet("IOCSH_PS1", "$(IOC)> " )
 epicsEnvSet("ACF_FILE", "$(ADS_IOC_TOP)/iocBoot/templates/unrestricted.acf")
@@ -46,7 +46,7 @@ epicsEnvSet("ASYN_PORT",        "ASYN_PLC")
 epicsEnvSet("IPADDR",           "172.21.140.69")
 epicsEnvSet("AMSID",            "172.21.140.69.1.1")
 epicsEnvSet("AMS_PORT",         "851")
-epicsEnvSet("ADS_MAX_PARAMS",   "6498")
+epicsEnvSet("ADS_MAX_PARAMS",   "6520")
 epicsEnvSet("ADS_SAMPLE_MS",    "50")
 epicsEnvSet("ADS_MAX_DELAY_MS", "100")
 epicsEnvSet("ADS_TIMEOUT_MS",   "1000")
@@ -93,7 +93,7 @@ dbLoadRecords("TwinCAT_TaskInfo.db", "PORT=$(ASYN_PORT),PREFIX=PLC:KFE:RIX:VAC:K
 dbLoadRecords("TwinCAT_TaskInfo.db", "PORT=$(ASYN_PORT),PREFIX=PLC:KFE:RIX:VAC:K2,IDX=3,TASK_PORT=351")
 dbLoadRecords("TwinCAT_AppInfo.db", "PORT=$(ASYN_PORT), PREFIX=PLC:KFE:RIX:VAC:K2")
 
-dbLoadRecords("TwinCAT_Project.db", "PREFIX=PLC:KFE:RIX:VAC:K2,PROJECT=plc-kfe-rix-vac.tsproj,HASH=d02fec2,VERSION=d02fec2,PYTMC=2.17.0,PLC_HOST=172.21.140.69")
+dbLoadRecords("TwinCAT_Project.db", "PREFIX=PLC:KFE:RIX:VAC:K2,PROJECT=plc-kfe-rix-vac.tsproj,HASH=59d68ef,VERSION=59d68ef,PYTMC=2.17.0,PLC_HOST=172.21.140.69")
 
 #   LCLS General: * -> 2.6.0 (SLAC)
 dbLoadRecords("TwinCAT_Dependency.db", "PREFIX=PLC:KFE:RIX:VAC:K2,DEPENDENCY=LCLS_General,VERSION=2.6.0,VENDOR=SLAC")
@@ -123,8 +123,8 @@ cd "$(IOC_TOP)"
 ## PLC Project Database files ##
 dbLoadRecords("plc_kfe_rix_vac.db", "PORT=$(ASYN_PORT),PREFIX=PLC:KFE:RIX:VAC:K2:,IOCNAME=$(IOC),IOC=$(IOC)")
 
-# Total records: 5498
-callbackSetQueueSize(12996)
+# Total records: 5520
+callbackSetQueueSize(13040)
 
 # Autosave and archive settings:
 save_restoreSet_status_prefix("PLC:KFE:RIX:VAC:K2:")
