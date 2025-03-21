@@ -48,7 +48,7 @@ fb_IM5K2_PPM_GPI_1.M_SetBits(30518);
 //New Superbee piranis
 fb_TM2K2_ATM_GPI_1(PG=>);
 fb_TM2K2_ATM_GPI_1.M_SetBits(30518);
-fb_LI4K2_K2A_GPI_1(PG=>);
+fb_AT3K2_SOLID_GPI_1(PG=>);
 
 //beamline dummy gauge
 bm_dummy_gauge.xPRESS_OK := TRUE;
@@ -83,11 +83,13 @@ fb_IM5K2_PPM_GCC_1(PG := bm_dummy_gauge, bEP := False);
 fb_IM5K2_PPM_GCC_1.M_SetBits(30518);
 fb_TM2K2_K2B_GCC_1(PG := bm_dummy_gauge, bEP := False);
 fb_TM2K2_K2B_GCC_1.M_SetBits(30518);
-fb_IM6K2_PPM_GCC_1(PG := bm_dummy_gauge, bEP := TRUE);
+fb_AT3K2_SOLID_GCC_1(PG := fb_AT3K2_SOLID_GPI_1.PG, bEP := TRUE);
 fb_SP1K2_PAX_GCC_1(PG := fb_SP1K2_PAX_GPI_1.PG, bEP := False);
 fb_SP1K2_PAX_GCC_1.M_SetBits(30518);
 fb_SP1K2_PAX_GCC_2(PG := fb_SP1K2_PAX_GPI_2.PG);
 fb_SP1K2_PAX_GCC_2.M_SetBits(30518);
+
+fb_SP2K2_TXAS_GCP_1(PG=>);
 
 //MKS422
 fb_TV4K2_GFS_1(PG := bm_dummy_gauge);
@@ -341,7 +343,7 @@ fb_IM2K2_PPM_PIP_1(i_stGauge := bm_dummy_gauge, i_xOverrideMode := xSystemOverri
 fb_IM3K2_PPM_PIP_1(i_stGauge := bm_dummy_gauge, i_xOverrideMode := xSystemOverrideMode2);
 fb_IM4K2_PPM_PIP_1(i_stGauge := bm_dummy_gauge, i_xOverrideMode := xSystemOverrideMode2);
 fb_LI2K2_K2A_PIP_1(i_stGauge := bm_dummy_gauge, i_xOverrideMode := xSystemOverrideMode2);
-fb_ST3K2_TERM_PIP_1(i_stGauge := bm_dummy_gauge, i_xOverrideMode := xSystemOverrideMode2);
+fb_SP2K2_TXAS_PIP_1(i_stGauge := bm_dummy_gauge, i_xOverrideMode := xSystemOverrideMode2);
 
 //Fast shutter Valve Interface
 vfs_dummy_gauge.xPRESS_OK := TRUE;
