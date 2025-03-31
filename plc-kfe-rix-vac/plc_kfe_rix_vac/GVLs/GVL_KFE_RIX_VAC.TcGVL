@@ -184,7 +184,8 @@ fb_SP1K2_PAX_VRC_4 : FB_VRC;
 {attribute 'TcLinkTo' := 	'.i_xOpnLS		:=	TIIB[K2S18_EL1004_E1]^Channel 1^Input;
                              .i_xClsLS		:= TIIB[K2S18_EL1004_E1]^Channel 2^Input ;
                              .q_xOPN_DO	:= TIIB[K2S18_EL2004_E2]^Channel 1^Output'}
-fb_AT3K2_SOLID_VWC_01 : FB_VRC;
+fb_AT3K2_SOLID_VWC_01 : FB_VRC_NO_FFO;
+stAT3K2_SOLID_VWC_01 : ST_VRC_NO;
 
 //{attribute 'pytmc' := ' pv: SP1K2:PAX:VRC:5 '}
 //{attribute 'TcLinkTo' := 	'.i_xOpnLS		:=	TIIB[Term 169 (EL1004)]^Channel 3^Input;
