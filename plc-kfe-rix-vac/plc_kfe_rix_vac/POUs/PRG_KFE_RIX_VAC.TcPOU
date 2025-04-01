@@ -255,7 +255,7 @@ bAT3K2_SOLID_VWC_01_ILK := fb_SP2K2_TXAS_GCP_1.PG.xAT_VAC and fb_AT3K2_SOLID_GCC
 fb_AT3K2_SOLID_VWC_01(
     i_xExtILK_OK:= bAT3K2_SOLID_VWC_01_ILK,
     i_xOverrideMode:= xSystemOverrideMode1,
-    iq_stValve=> stAT3K2_SOLID_VWC_01,
+    iq_stValve=> ,
     io_fbFFHWO:= g_FastFaultOutput2,
     fbArbiter:= fbArbiter1,
     i_xPMPS_OK:= FALSE,
