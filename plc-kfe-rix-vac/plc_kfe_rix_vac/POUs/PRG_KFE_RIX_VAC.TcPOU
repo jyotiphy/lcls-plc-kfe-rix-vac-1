@@ -252,9 +252,9 @@ bSP1K2_PAX_VRC_2_ILK := F_TurboGateValve_Protection_ILK(i_Turbo:=fb_SP1K2_PAX_PT
 fb_SP1K2_PAX_VRC_2(i_xExtILK_OK:=bSP1K2_PAX_VRC_2_ILK,
             i_xOverrideMode:=xSystemOverrideMode1,
             iq_stValve =>);
-			
-bAT3K2_SOLID_VWC_01_ILK := fb_SP2K2_TXAS_GCP_1.PG.rPRESS < rAT3K2_SOLID_VWC_01_US_PRESS_OK and fb_SP2K2_TXAS_GCP_1.PG.rPRESS > 0 
-					    and fb_AT3K2_SOLID_GCC_1.IG.rPRESS < rAT3K2_SOLID_VWC_01_DS_PRESS_OK and fb_AT3K2_SOLID_GCC_1.IG.rPRESS > 0;
+
+bAT3K2_SOLID_VWC_01_ILK := fb_SP2K2_TXAS_GCP_1.PG.rPRESS < rAT3K2_SOLID_VWC_01_US_PRESS_OK and fb_SP2K2_TXAS_GCP_1.PG.rPRESS > 0
+                        and fb_AT3K2_SOLID_GCC_1.IG.rPRESS < rAT3K2_SOLID_VWC_01_DS_PRESS_OK and fb_AT3K2_SOLID_GCC_1.IG.rPRESS > 0;
 fb_AT3K2_SOLID_VWC_01(
     i_xExtILK_OK:= bAT3K2_SOLID_VWC_01_ILK,
     i_xOverrideMode:= xSystemOverrideMode1,
@@ -375,17 +375,5 @@ fb_RIX_ILK(
 );
 ]]></ST>
     </Implementation>
-    <LineIds Name="PRG_KFE_RIX_VAC">
-      <LineId Id="3" Count="227" />
-      <LineId Id="368" Count="0" />
-      <LineId Id="231" Count="0" />
-      <LineId Id="390" Count="0" />
-      <LineId Id="232" Count="0" />
-      <LineId Id="359" Count="7" />
-      <LineId Id="358" Count="0" />
-      <LineId Id="367" Count="0" />
-      <LineId Id="233" Count="106" />
-      <LineId Id="2" Count="0" />
-    </LineIds>
   </POU>
 </TcPlcObject>
