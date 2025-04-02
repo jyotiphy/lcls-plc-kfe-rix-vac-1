@@ -253,8 +253,8 @@ fb_SP1K2_PAX_VRC_2(i_xExtILK_OK:=bSP1K2_PAX_VRC_2_ILK,
             i_xOverrideMode:=xSystemOverrideMode1,
             iq_stValve =>);
 
-bAT3K2_SOLID_VWC_01_ILK := fb_SP2K2_TXAS_GCP_1.PG.rPRESS < rAT3K2_SOLID_VWC_01_US_PRESS_OK and fb_SP2K2_TXAS_GCP_1.PG.rPRESS > 0
-                        and fb_AT3K2_SOLID_GCC_1.IG.rPRESS < rAT3K2_SOLID_VWC_01_DS_PRESS_OK and fb_AT3K2_SOLID_GCC_1.IG.rPRESS > 0;
+bAT3K2_SOLID_VWC_01_ILK := fb_SP2K2_TXAS_GCP_1.PG.rPRESS < rAT3K2_SOLID_VWC_01_US_PRESS_OK and fb_SP2K2_TXAS_GCP_1.PG.xPRESS_OK
+                        and fb_AT3K2_SOLID_GCC_1.IG.rPRESS < rAT3K2_SOLID_VWC_01_DS_PRESS_OK and fb_AT3K2_SOLID_GCC_1.IG.xPress_OK;
 fb_AT3K2_SOLID_VWC_01(
     i_xExtILK_OK:= bAT3K2_SOLID_VWC_01_ILK,
     i_xOverrideMode:= xSystemOverrideMode1,
