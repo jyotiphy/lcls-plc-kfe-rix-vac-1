@@ -399,7 +399,7 @@
 		</DataType>
 	</DataTypes>
 	<Project GUID="{8CBBF67A-BFE9-4149-A495-ECE1092E8FE6}" Name="plc_kfe_rix_vac" PrjFilePath="..\..\plc_kfe_rix_vac\plc_kfe_rix_vac.plcproj" TmcFilePath="..\..\plc_kfe_rix_vac\plc_kfe_rix_vac.tmc" ReloadTmc="true" AmsPort="851" FileArchiveSettings="#x000e" SymbolicMapping="true">
-		<Instance Id="#x08502000" TcSmClass="TComPlcObjDef" KeepUnrestoredLinks="2" TmcPath="plc_kfe_rix_vac\plc_kfe_rix_vac.tmc" TmcHash="{B49B845F-2772-ABB7-7894-10E7C3052427}">
+		<Instance Id="#x08502000" TcSmClass="TComPlcObjDef" KeepUnrestoredLinks="2" TmcPath="plc_kfe_rix_vac\plc_kfe_rix_vac.tmc" TmcHash="{6CAB3EAF-05B3-BEF4-697C-A916E9835C76}">
 			<Name>plc_kfe_rix_vac Instance</Name>
 			<CLSID ClassFactory="TcPlc30">{08500001-0000-0000-F000-000000000064}</CLSID>
 			<Vars VarGrpType="1">
@@ -1318,6 +1318,10 @@
 					<Type>BOOL</Type>
 				</Var>
 				<Var>
+					<Name>GVL_Variables.g_FastFaultOutput1.q_xFastFaultOut</Name>
+					<Type>BOOL</Type>
+				</Var>
+				<Var>
 					<Name>GVL_KFE_RIX_VAC.fb_PC1K1_ZOS_GCC_1.q_xHV_DIS</Name>
 					<Comment><![CDATA[ Enable High Voltage when True // 'TcLinkTo' (EP2624) ^Output]]></Comment>
 					<Type>BOOL</Type>
@@ -1471,7 +1475,7 @@
 					<Type>BOOL</Type>
 				</Var>
 				<Var>
-					<Name>GVL_KFE_RIX_VAC.fb_AT3K2_SOLID_VWC_01.q_xOPN_DO</Name>
+					<Name>GVL_KFE_RIX_VAC.fb_AT3K2_SOLID_VWC_01.q_xCLS_DO</Name>
 					<Type>BOOL</Type>
 				</Var>
 				<Var>
@@ -1691,10 +1695,6 @@
 				<Var>
 					<Name>GVL_KFE_RIX_VAC.RIXS_ROUGH_VRO_01.q_xOPN_DO</Name>
 					<Comment><![CDATA[IO]]></Comment>
-					<Type>BOOL</Type>
-				</Var>
-				<Var>
-					<Name>GVL_Variables.g_FastFaultOutput1.q_xFastFaultOut</Name>
 					<Type>BOOL</Type>
 				</Var>
 			</Vars>
@@ -2209,7 +2209,7 @@
 				<Link VarA="PlcTask Inputs^GVL_KFE_RIX_VAC.fb_AT3K2_SOLID_VWC_01.i_xOpnLS" VarB="Channel 1^Input" AutoLink="true" Size="1"/>
 			</OwnerB>
 			<OwnerB Name="TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 45 (EK1521-0010)^Term 47 (EK1501-0010)^Term 62 (EK1122)^K2S18 (EK1100)^K2S18_EL2004_E2">
-				<Link VarA="PlcTask Outputs^GVL_KFE_RIX_VAC.fb_AT3K2_SOLID_VWC_01.q_xOPN_DO" VarB="Channel 1^Output" AutoLink="true" Size="1"/>
+				<Link VarA="PlcTask Outputs^GVL_KFE_RIX_VAC.fb_AT3K2_SOLID_VWC_01.q_xCLS_DO" VarB="Channel 1^Output" AutoLink="true" Size="1"/>
 			</OwnerB>
 			<OwnerB Name="TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 45 (EK1521-0010)^Term 47 (EK1501-0010)^Term 62 (EK1122)^K2S18 (EK1100)^K2S18_EL2004_E5">
 				<Link VarA="PlcTask Outputs^GVL_KFE_RIX_VAC.fb_LI4K2_K2B_OUT_PTM_01.q_PumpingStation" VarB="Channel 3^Output" AutoLink="true" Size="1"/>

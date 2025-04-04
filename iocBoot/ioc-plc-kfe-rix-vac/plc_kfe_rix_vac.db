@@ -1512,6 +1512,33 @@ record(bo, "AT3K2:SOLID:VWC:01:ALM_RST") {
   info(archive, "VAL")
 }
 
+record(bi, "AT3K2:SOLID:VWC:01:CLS_SW_RBV") {
+  # GVL_KFE_RIX_VAC.fb_AT3K2_SOLID_VWC_01.iq_stValve.pv_xCLS_SW
+  field(DESC, "GVL_KFE_RIX_VAC.fb_A...tValve.pv_xCLS_SW")
+  field(SCAN, "I/O Intr")
+  field(PINI, "1")
+  field(TSE, "-2")
+  field(DTYP, "asynInt32")
+  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_KFE_RIX_VAC.fb_AT3K2_SOLID_VWC_01.iq_stValve.pv_xCLS_SW?")
+  field(ZNAM, "OPEN")
+  field(ONAM, "CLOSE")
+  info(autosaveFields_pass0, "DESC DISS OSV SIMS UDFS ZSV")
+  info(archive, "VAL")
+  field(ASG, "NO_WRITE")
+}
+
+record(bo, "AT3K2:SOLID:VWC:01:CLS_SW") {
+  # GVL_KFE_RIX_VAC.fb_AT3K2_SOLID_VWC_01.iq_stValve.pv_xCLS_SW
+  field(DESC, "GVL_KFE_RIX_VAC.fb_A...tValve.pv_xCLS_SW")
+  field(DTYP, "asynInt32")
+  field(UDFS, "0")
+  field(OUT, "@asyn($(PORT),0,1)ADSPORT=851/GVL_KFE_RIX_VAC.fb_AT3K2_SOLID_VWC_01.iq_stValve.pv_xCLS_SW=")
+  field(ZNAM, "OPEN")
+  field(ONAM, "CLOSE")
+  info(autosaveFields_pass0, "COSV DESC DISS OSV SIMS UDFS VAL ZSV")
+  info(archive, "VAL")
+}
+
 record(bi, "AT3K2:SOLID:VWC:01:OPN_SW_RBV") {
   # GVL_KFE_RIX_VAC.fb_AT3K2_SOLID_VWC_01.iq_stValve.pv_xOPN_SW
   field(DESC, "GVL_KFE_RIX_VAC.fb_A...tValve.pv_xOPN_SW")
@@ -1539,6 +1566,33 @@ record(bo, "AT3K2:SOLID:VWC:01:OPN_SW") {
   info(archive, "VAL")
 }
 
+record(bi, "AT3K2:SOLID:VWC:01:FORCE_CLS_RBV") {
+  # GVL_KFE_RIX_VAC.fb_AT3K2_SOLID_VWC_01.iq_stValve.pv_xOvrdCls
+  field(DESC, "GVL_KFE_RIX_VAC.fb_A...Valve.pv_xOvrdCls")
+  field(SCAN, "I/O Intr")
+  field(PINI, "1")
+  field(TSE, "-2")
+  field(DTYP, "asynInt32")
+  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_KFE_RIX_VAC.fb_AT3K2_SOLID_VWC_01.iq_stValve.pv_xOvrdCls?")
+  field(ZNAM, "FALSE")
+  field(ONAM, "FORCE CLOSE")
+  info(autosaveFields_pass0, "DESC DISS OSV SIMS UDFS ZSV")
+  info(archive, "VAL")
+  field(ASG, "NO_WRITE")
+}
+
+record(bo, "AT3K2:SOLID:VWC:01:FORCE_CLS") {
+  # GVL_KFE_RIX_VAC.fb_AT3K2_SOLID_VWC_01.iq_stValve.pv_xOvrdCls
+  field(DESC, "GVL_KFE_RIX_VAC.fb_A...Valve.pv_xOvrdCls")
+  field(DTYP, "asynInt32")
+  field(UDFS, "0")
+  field(OUT, "@asyn($(PORT),0,1)ADSPORT=851/GVL_KFE_RIX_VAC.fb_AT3K2_SOLID_VWC_01.iq_stValve.pv_xOvrdCls=")
+  field(ZNAM, "FALSE")
+  field(ONAM, "FORCE CLOSE")
+  info(autosaveFields_pass0, "COSV DESC DISS OSV SIMS UDFS VAL ZSV")
+  info(archive, "VAL")
+}
+
 record(bi, "AT3K2:SOLID:VWC:01:FORCE_OPN_RBV") {
   # GVL_KFE_RIX_VAC.fb_AT3K2_SOLID_VWC_01.iq_stValve.pv_xOvrdOpn
   field(DESC, "GVL_KFE_RIX_VAC.fb_A...Valve.pv_xOvrdOpn")
@@ -1562,6 +1616,33 @@ record(bo, "AT3K2:SOLID:VWC:01:FORCE_OPN") {
   field(OUT, "@asyn($(PORT),0,1)ADSPORT=851/GVL_KFE_RIX_VAC.fb_AT3K2_SOLID_VWC_01.iq_stValve.pv_xOvrdOpn=")
   field(ZNAM, "FALSE")
   field(ONAM, "FORCE OPEN")
+  info(autosaveFields_pass0, "COSV DESC DISS OSV SIMS UDFS VAL ZSV")
+  info(archive, "VAL")
+}
+
+record(bi, "AT3K2:SOLID:VWC:01:CLS_DO_RBV") {
+  # GVL_KFE_RIX_VAC.fb_AT3K2_SOLID_VWC_01.iq_stValve.q_xCLS_DO
+  field(DESC, "GVL_KFE_RIX_VAC.fb_A...stValve.q_xCLS_DO")
+  field(SCAN, "I/O Intr")
+  field(PINI, "1")
+  field(TSE, "-2")
+  field(DTYP, "asynInt32")
+  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_KFE_RIX_VAC.fb_AT3K2_SOLID_VWC_01.iq_stValve.q_xCLS_DO?")
+  field(ZNAM, "OPEN")
+  field(ONAM, "CLOSE")
+  info(autosaveFields_pass0, "DESC DISS OSV SIMS UDFS ZSV")
+  info(archive, "VAL")
+  field(ASG, "NO_WRITE")
+}
+
+record(bo, "AT3K2:SOLID:VWC:01:CLS_DO") {
+  # GVL_KFE_RIX_VAC.fb_AT3K2_SOLID_VWC_01.iq_stValve.q_xCLS_DO
+  field(DESC, "GVL_KFE_RIX_VAC.fb_A...stValve.q_xCLS_DO")
+  field(DTYP, "asynInt32")
+  field(UDFS, "0")
+  field(OUT, "@asyn($(PORT),0,1)ADSPORT=851/GVL_KFE_RIX_VAC.fb_AT3K2_SOLID_VWC_01.iq_stValve.q_xCLS_DO=")
+  field(ZNAM, "OPEN")
+  field(ONAM, "CLOSE")
   info(autosaveFields_pass0, "COSV DESC DISS OSV SIMS UDFS VAL ZSV")
   info(archive, "VAL")
 }
