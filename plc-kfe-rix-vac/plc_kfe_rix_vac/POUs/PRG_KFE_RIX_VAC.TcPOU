@@ -257,13 +257,13 @@ bAT3K2_SOLID_VWC_01_ILK := fb_SP2K2_TXAS_GCP_1.PG.rPRESS < rAT3K2_SOLID_VWC_01_U
                         and fb_AT3K2_SOLID_GCC_1.IG.rPRESS < rAT3K2_SOLID_VWC_01_DS_PRESS_SP and fb_AT3K2_SOLID_GCC_1.IG.xPress_OK;
 fb_AT3K2_SOLID_VWC_01(
     i_xExtILK_OK:= bAT3K2_SOLID_VWC_01_ILK,
-    i_xOverrideMode:= xSystemOverrideMode1,
+    i_xOverrideMode:= xSystemOverrideMode2,
     iq_stValve=> ,
     io_fbFFHWO:= g_FastFaultOutput2,
-    fbArbiter:= fbArbiter1,
-    i_xPMPS_OK:= FALSE,
+    fbArbiter:= fbArbiter2,
+    i_xPMPS_OK:= TRUE,
     i_xIsAperture:= TRUE,
-    i_sDevName:= ,
+    i_sDevName:= 'AT3K2_SOLID_VWC_01',
     i_nTransitionRootID:=
 );
 
